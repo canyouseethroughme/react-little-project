@@ -3,12 +3,38 @@ import Link from "next/link";
 const Index = () => (
   <div>
     <Link href="/">
-      <a style={{ fontSize: 20, marginRight: 15 }}>Home</a>
+      <a>Home</a>
     </Link>
     <Link href="/about">
-      <a style={{ fontSize: 20, marginRight: 15 }}>About</a>
+      <a>About</a>
     </Link>
-    <p>Hello Next.js</p>
+    <header>
+      <h1>Header H1</h1>
+    </header>
+    <div className="div-paragraph">
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+    </div>
+    <style jsx>{`
+      a {
+        margin-right: 15px;
+      }
+
+      .div-paragraph {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      * {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      p {
+        color: red;
+        font-size: 14px;
+      }
+    `}</style>
   </div>
 );
 
