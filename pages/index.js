@@ -1,8 +1,10 @@
 import Navigation from "../components/navigation";
 import Header from "../components/header";
+import globalStyles from "../assets/globalStyles";
 
 const Index = () => (
   <div>
+    {globalStyles()}
     <Header />
     <Navigation />
     <div className="div-paragraph">
@@ -14,8 +16,9 @@ const Index = () => (
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
-      * {
-        text-align: center;
+      p {
+        color: red;
+        font-size: 14px;
       }
     `}</style>
   </div>
