@@ -8,8 +8,8 @@ const Index = () => (
     <Header />
     <Navigation />
     <div className="div-paragraph">
-      <p>First paragraph</p>
-      <p>Second paragraph</p>
+      <p>First paragraph 50%</p>
+      <p>Second paragraph 50%</p>
     </div>
     <dic className="div-img">
       <img src="/static/LT-Marshmallow.jpg" />
@@ -25,6 +25,8 @@ const Index = () => (
       p {
         color: red;
         font-size: 14px;
+        border: 1px solid green;
+        padding: 20px;
       }
       .div-img {
         display: grid;
