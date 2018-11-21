@@ -32,11 +32,13 @@ const Index = () => (
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        width: 100%;
+        height: 100%;
       }
       img {
         border: 1px solid green;
-        height: 30vh;
         width: 100%;
+        object-fit: cover;
       }
     `}</style>
   </div>
